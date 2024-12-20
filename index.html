@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REACT with CDN</title>
 </head>
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
 <body>
     <div id="root">
         <h1>Hello World!</h1>
@@ -16,7 +16,8 @@
     </div>
 </body>
 
-<script src="./App.js">
+<!-- without type='module' this script tag will be treated a normal js file that is browser script and imports are not allowed in browser scripts -->
+<script type='module' src="./App.js">  
 </script>
 
 </html>

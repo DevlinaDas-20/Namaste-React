@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from 'react-dom/client';
 let element = document.createElement('h1');
 element.innerHTML='HELLO Javascript ! Tag injected using vannila JS';
 document.getElementById('root').appendChild(element)
